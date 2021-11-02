@@ -1,26 +1,16 @@
 ﻿using System;
 
-namespace Login
+namespace Parandustöö
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Login");
-            string UserLogin = Console.ReadLine();
-            Console.WriteLine("Password");
-            string UserPassword = Console.ReadLine();
+            Console.WriteLine("Sisesta oma nimi:");
+            string UserName = Console.ReadLine();
+            Console.WriteLine($"Hello ,{UserName}");
+        }   
 
-            if (UserLogin != "admin" || UserPassword != "admin1234")
-            {
-                Console.WriteLine("The login is incorrect");
-            }
-            else
-            {
-                Console.WriteLine("Success");
-            }    
-        
-        }
-
+   
     }
 }
